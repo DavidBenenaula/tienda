@@ -1,0 +1,78 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el título */
+.title {
+font-size: 48px; /* Tamaño grande para resaltar */
+color: #D2B48C; /* Color llamativo */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
+text-transform: uppercase; /* Convertir texto a mayúsculas */
+letter-spacing: 4px; /* Espaciado entre letras */
+margin: 20px 0; /* Margen superior e inferior */
+padding: 10px; /* Espaciado interno */
+border-bottom: 3px solid #C69C6D; /* Línea inferior para añadir estilo */
+transition: color 0.3s ease, transform 0.3s ease; /* Efectos de transición */
+}
+
+.title:hover {
+color: #6F4F28; /* Cambia el color al pasar el cursor */
+transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 15px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 5px;
+}

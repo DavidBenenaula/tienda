@@ -1,0 +1,132 @@
+:root {
+  --primary-bg: #f4e4d9;
+  --secondary-bg: #d6bfa7;
+  --accent-color: #a67c5b;
+  --text-color: #4f3824;
+  --btn-hover: #c69c78;
+  --btn-light-hover: #e8d5c1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product-detail {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+  background: linear-gradient(145deg, var(--primary-bg), var(--secondary-bg));
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.product-detail h1 {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-info {
+  flex: 1;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  background: var(--secondary-bg);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-info p {
+  margin: 10px 0;
+}
+
+.product-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e9e5d4;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #a65c35; /* Un tono café oscuro para mejor contraste */
+  color: #fff; /* Blanco puro para destacar el texto */
+}
+
+.btn-primary:hover {
+  background-color: #8b4a2b; /* Un café ligeramente más oscuro para el efecto hover */
+}
+
+
+.btn-secondary {
+  background-color: #7d5a3b;
+}
+
+.btn-secondary:hover {
+  background-color: #9b7352;
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-light:hover {
+  background-color: var(--btn-light-hover);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

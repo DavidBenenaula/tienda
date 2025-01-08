@@ -1,0 +1,85 @@
+:root {
+  --primary-bg: #D2B48C; /* Café pastel suave */
+  --secondary-bg: #F5DEB3; /* Color más claro para fondo */
+  --highlight-color: #C69C78; /* Tono pastel intermedio para hover */
+  --accent-color: #A67C52; /* Café oscuro para acentos */
+  --text-color: #4f3824; /* Café oscuro para texto */
+  --light-accent: #E8CBA7; /* Café muy claro */
+  --border-color: #D1A05D; /* Tono de borde más intenso */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+  --container-bg: #F4E1C1; /* Fondo de contenedores */
+  --transition-time: 0.3s; /* Tiempo de transición */
+}
+
+.cart-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  background-color: var(--secondary-bg); /* Fondo suave en tono pastel */
+  border: 2px solid var(--border-color); /* Borde con color suave */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow-color); /* Sombra suave */
+  padding: 20px;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.cart-container:hover {
+  transform: translateY(-5px); /* Efecto de elevar el carrito */
+  box-shadow: 0 8px 15px var(--shadow-color); /* Sombra más intensa al pasar el mouse */
+}
+
+.cart-container h3 {
+  font-size: 1.8rem;
+  color: var(--accent-color); /* Título con color suave y elegante */
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-container li {
+  font-size: 1rem;
+  color: var(--text-color); /* Color de texto suave */
+  margin: 10px 0;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.cart-container li:hover {
+  color: var(--highlight-color); /* Cambio de color al pasar el mouse */
+}
+
+.cart-container p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-color); /* Color destacado para el total */
+  text-align: center;
+  letter-spacing: 1px;
+  border-top: 2px solid var(--light-accent); /* Línea sutil en la parte superior */
+  padding-top: 15px;
+}
+
+.cart-container p strong {
+  font-weight: 900;
+  color: var(--highlight-color); /* Resaltar la palabra 'Total' con color más fuerte */
+}
+
+  @media screen and (max-width: 600px) {
+    ion-title{ font-size: 32px;
+
+  }
+  }
+  
