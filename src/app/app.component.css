@@ -64,12 +64,14 @@
 .cart-container p {
   margin-top: 20px;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--accent-color); /* Color destacado para el total */
   text-align: center;
   letter-spacing: 1px;
   border-top: 2px solid var(--light-accent); /* Línea sutil en la parte superior */
   padding-top: 15px;
+  background-color: rgb(197, 164, 137) ;
+  border-radius: 10px;
 }
 
 .cart-container p strong {
@@ -79,7 +81,15 @@
 
   @media screen and (max-width: 600px) {
     ion-title{ font-size: 32px;
-
+ 
   }
+  }
+  .carrito{
+    
+    margin-left: +176px;
+    
+  }
+  .tot{
+    margin-left: +180px;
   }
   

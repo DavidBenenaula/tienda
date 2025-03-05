@@ -1,17 +1,31 @@
-<div class="fondo">
-<div class="cart-container">
-  <h3>🛒 Carrito</h3>
-  <ul>
-    <li *ngFor="let item of cart">
-      {{ item.product.name }} x{{ item.quantity }} - ${{ item.product.price * item.quantity }}
-    </li>
-  </ul>
-  <p><strong>Total:</strong> ${{ total }}</p>
-</div>
+<ion-content>
+  <div class="fondo">
+    <div class="cart-container">
+      <header>
+        <ng-content select="[cart-header]"></ng-content>
+      </header>
 
+      <main>
+        <ng-content select="[cart-items]"><!-- Sección del header -->
+          <h3 cart-header class="carrito">🛒</h3>
+        
+          <!-- Sección de los items del carrito -->
+          <ul cart-items>
+            <li *ngFor="let item of cart">
+              {{ item.product.name }} x{{ item.quantity }} - ${{ item.product.price * item.quantity }}
+            </li>
+          </ul>
+        
+          <!-- Sección del total -->
+          <p cart-total class="tot"><strong>Total:</strong> ${{ total }}</p></ng-content>
+      </main>
 
-<router-outlet></router-outlet>
+      <footer>
+        <ng-content select="[cart-total]"></ng-content>
+      </footer>
 
-</div>
-
-
+      
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</ion-content>

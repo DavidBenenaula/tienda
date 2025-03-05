@@ -1,55 +1,54 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #D2B48C; /* Café pastel de fondo */
-    font-family: 'Poppins', sans-serif;
-    color: #4f3824; /* Color de texto oscuro */
-  }
-  
-  .error-container {
-    text-align: center;
-    padding: 30px;
-    border-radius: 15px;
-    background-color: #F5DEB3; /* Tono pastel claro para el contenedor */
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    width: 90%;
-    transition: transform 0.3s ease;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #A67C52; /* Color café para el título */
-  }
-  
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    line-height: 1.5;
-    color: #4f3824; /* Color oscuro para el párrafo */
-  }
-  
-  a {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: #A67C52; /* Tono café para el botón */
-    border-radius: 30px;
-    text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-  }
-  
-  a:hover {
-    background-color: #6C4F34; /* Café más oscuro para el hover */
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  }
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #D2B48C; /* Café pastel de fondo */
+  font-family: 'Poppins', sans-serif;
+  color: #4f3824; /* Color de texto oscuro */
+}
+
+.error-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #F5DEB3; /* Tono pastel claro para el contenedor */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #A67C52; /* Color café para el título */
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #4f3824; /* Color oscuro para el párrafo */
+}
+
+a {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #A67C52; /* Tono café para el botón */
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+  background-color: #6C4F34; /* Café más oscuro para el hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}

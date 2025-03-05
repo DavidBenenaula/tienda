@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ProductService, Product } from '../product.service';
+import { ProductService, Product } from '../services/product.service';
 import { NgFor } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, NgFor],
+  imports: [RouterModule, NgFor, IonicModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })

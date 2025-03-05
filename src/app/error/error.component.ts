@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-error',
-  imports: [],
+  imports: [IonicModule],
   templateUrl: './error.component.html',
   styleUrl: './error.component.css'
 })
